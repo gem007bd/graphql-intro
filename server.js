@@ -1,39 +1,15 @@
-const express = require('express');
-const {
-    ApolloServer,
-    gql
-} = require('apollo-server');
+import express from 'express';
 
 const app = express();
 
-/**
- * Construct a schema, using GraphQL schema language
- * The GraphQL schema
- */
-const typeDefs = gql `
-  type Query {
-    "A simple type for getting started!"
-    hello: String
-  }
-`;
-
-/**
- * Provide resolver functions for your schema fields
- */
-const resolvers = {
-    Query: {
-        hello: () => 'world'
-    }
-};
-
-const server = new ApolloServer({
-    typeDefs,
-    resolvers,
+app.get('/graphql', (req, res) => {
+    res.send(`<html>
+        <body>
+            <h1> GraphQL</h1>
+        </body>
+    </html>`);
 });
 
-
-server.listen().then(({
-    url
-}) => {
-    console.log(`🚀 Server ready at ${url}`)
+app.listen(4000, () => {
+    console.log("listining on porst 4000");
 });
