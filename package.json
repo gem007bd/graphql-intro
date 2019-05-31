@@ -1,10 +1,11 @@
 {
-  "name": "graphql",
+  "name": "graphql-intro",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://github.com/gem007bd/graphql-intro#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "apollo-server": "^2.5.1",
+    "apollo-server-express": "^2.5.1",
+    "graphql": "^14.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
