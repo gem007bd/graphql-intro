@@ -20,7 +20,7 @@
   "homepage": "https://github.com/gem007bd/graphql-intro#readme",
   "dependencies": {
     "babel-watch": "^7.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
